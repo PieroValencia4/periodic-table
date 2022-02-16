@@ -1,0 +1,37 @@
+.Cell {
+	min-width: 40px;
+	min-height: 40px;
+}
+
+.Element {
+	font-size: 20px;
+	font-weight: bold;
+	border: 1px solid #FFF;
+	margin: 1px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #6BA397;
+}
+
+.Metals {
+	background-color: #3C4D92;
+}
+
+.NoMetals {
+	background-color: #ECE937;
+}
+
+.Lan {
+	background-color: #D54F3C;
+}
+
+.Act {
+	background-color: #55AC4A;
+}
+
+.NobleGases {
+	background-color: #6A47AC;
+}
