@@ -18,41 +18,41 @@ const elements = [
 	['', '', '', 'Th', 'Pa', 'U', 'Np', 'Pu', 'Am', 'Cm', 'Bk', 'Cf', 'Es', 'Fm', 'Md', 'No', 'Lr', '']
 ];
 
-const Board = () => {
+const Board = ({ setSelectedItem }) => {
 	const elementsPeriod1 = elements[0].map(e =>
-		<Col><Element e={e} /></Col>
+		<Col><Element e={e} setSelectedItem={setSelectedItem} /></Col>
 	);
 
 	const elementsPeriod2 = elements[1].map(e =>
-		<Col><Element e={e} /></Col>
+		<Col><Element e={e} setSelectedItem={setSelectedItem} /></Col>
 	);
 
 	const elementsPeriod3 = elements[2].map(e =>
-		<Col><Element e={e} /></Col>
+		<Col><Element e={e} setSelectedItem={setSelectedItem} /></Col>
 	);
 
 	const elementsPeriod4 = elements[3].map(e =>
-		<Col><Element e={e} /></Col>
+		<Col><Element e={e} setSelectedItem={setSelectedItem} /></Col>
 	);
 
 	const elementsPeriod5 = elements[4].map(e =>
-		<Col><Element e={e} /></Col>
+		<Col><Element e={e} setSelectedItem={setSelectedItem} /></Col>
 	);
 
 	const elementsPeriod6 = elements[5].map(e =>
-		<Col><Element e={e} /></Col>
+		<Col><Element e={e} setSelectedItem={setSelectedItem} /></Col>
 	);
 
 	const elementsPeriod7 = elements[6].map(e =>
-		<Col><Element e={e} /></Col>
+		<Col><Element e={e} setSelectedItem={setSelectedItem} /></Col>
 	);
 
 	const lan = elements[7].map(e =>
-		<Col><Element e={e} /></Col>
+		<Col><Element e={e} setSelectedItem={setSelectedItem} /></Col>
 	);
 
 	const act = elements[8].map(e =>
-		<Col><Element e={e} /></Col>
+		<Col><Element e={e} setSelectedItem={setSelectedItem} /></Col>
 	);
 
 	return (

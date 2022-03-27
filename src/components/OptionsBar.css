@@ -7,3 +7,14 @@ button {
 	margin: 2px;
 	font-weight: bold;
 }
+
+#Element {
+	border-radius: 5px;
+	color: white;
+	background-color: grey;
+	padding: 2px;
+	margin: 2px;
+	width: 180px;
+	height: 180px;
+	font-size: 80px;
+}

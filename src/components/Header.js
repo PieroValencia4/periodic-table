@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 const Header = () => {
 	return (
 		<Container className="Header">
-			<p>Periodic Table</p>
+			<h1>Periodic Table</h1>
 		</Container>
 	);
 };
