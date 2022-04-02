@@ -2,13 +2,15 @@ import './Element.css';
 
 import { useState } from 'react';
 
-const Element = ({ e, setSelectedItem }) => {
-	const [color, setColor] = useState('');
-	let className = (e.length > 0) ? 'Cell Element' : 'Cell';
+const Element = ({ e, setSelectedItem, selectedFamily }) => {
+	let className = 'Cell Element';
+
+	const color = (selectedFamily === e.family) ? e.family : 'DefaultColor';
+	className = className + ' ' + color;
 
  	return (
-		<div className={className} onClick={() => setSelectedItem(e)}>
-			{e}
+		<div className={className} onClick={() => setSelectedItem(e.symbol)}>
+			{e.symbol}
 		</div>
 	);
 };

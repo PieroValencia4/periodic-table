@@ -8,12 +8,13 @@ import OptionsBar from './OptionsBar';
 
 const App = () => {
 	const [selectedItem, setSelectedItem] = useState('H');
+	const [selectedFamily, setSelectedFamily] = useState('');
 
 	return (
 		<div className="App">
 			<Header />
-			<OptionsBar selectedItem={selectedItem} />
-			<Board setSelectedItem={setSelectedItem} />
+			<OptionsBar selectedItem={selectedItem} setSelectedFamily={setSelectedFamily} />
+			<Board setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} />
 		</div>
 	);
 };

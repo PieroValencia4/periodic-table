@@ -2,46 +2,50 @@ import './OptionsBar.css';
 import { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
-const CategoryButton = ({ name, color }) => (
-	<button style={{backgroundColor: color}}>{name}</button>
+const FamilyButton = ({ name, color, setSelectedFamily }) => (
+	<button style={{backgroundColor: color}} onClick={() => setSelectedFamily(name)}>{name}</button>
 );
 
-const OptionsBar = ({ selectedItem }) => {
+const OptionsBar = ({ selectedItem, setSelectedFamily }) => {
 	return (
-		<Container>
+		<Container fluid>
 			<Row>
 				<Col sm={8}>
-					<Row>Categories:</Row>
 					<Row>
 						<Col>
-							<CategoryButton name='Noble gases' color='#E7502E' />
+							<b>Family</b>
+						</Col>
+					</Row>
+					<Row>
+						<Col>
+							<FamilyButton name='AlkaliMetals' color='#662EE7' setSelectedFamily={setSelectedFamily} />
 						</Col>
 						<Col>
-							<CategoryButton name='Halogens' color='#E78D2E' />
+							<FamilyButton name='AlkalineEarthMetals' color='#2E6CE7' setSelectedFamily={setSelectedFamily} />
 						</Col>
 						<Col>
-							<CategoryButton name='No metals' color='#E7CB2E' />
+							<FamilyButton name='TransitionMetals' color='#2EE736' setSelectedFamily={setSelectedFamily} />
 						</Col>
 						<Col>
-							<CategoryButton name='Metalloids' color='#C5E72E' />
+							<FamilyButton name='PostTransitionalMetals' color='#7FE72E' setSelectedFamily={setSelectedFamily} />
 						</Col>
 						<Col>
-							<CategoryButton name='Post-transitional metals' color='#7FE72E' />
+							<FamilyButton name='Metalloids' color='#C5E72E' setSelectedFamily={setSelectedFamily} />
 						</Col>
 						<Col>
-							<CategoryButton name='Transition metals' color='#2EE736' />
+							<FamilyButton name='NoMetals' color='#E7CB2E' setSelectedFamily={setSelectedFamily} />
 						</Col>
 						<Col>
-							<CategoryButton name='Actinides' color='#2EE78D' />
+							<FamilyButton name='Halogens' color='#E78D2E' setSelectedFamily={setSelectedFamily} />
 						</Col>
 						<Col>
-							<CategoryButton name='Lanthanides' color='#2ED9E7' />
+							<FamilyButton name='NobleGases' color='#E7502E' setSelectedFamily={setSelectedFamily} />
 						</Col>
 						<Col>
-							<CategoryButton name='Alkaline earth metals' color='#2E6CE7' />
+							<FamilyButton name='Lanthanides' color='#2ED9E7' setSelectedFamily={setSelectedFamily} />
 						</Col>
 						<Col>
-							<CategoryButton name='Alkali metals' color='#662EE7' />
+							<FamilyButton name='Actinides' color='#2EE78D' setSelectedFamily={setSelectedFamily} />
 						</Col>
 					</Row>
 				</Col>
