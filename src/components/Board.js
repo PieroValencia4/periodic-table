@@ -4,9 +4,6 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 import Element from './Element';
 
-const periods = 7;
-const groups = 18;
-
 const elements = [
 	[{symbol: 'H', family: 'NoMetals'}, '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', {symbol: 'He', family: 'NobleGases'}],
 	[{symbol: 'Li', family: 'AlkaliMetals'}, {symbol: 'Be', family: 'AlkalineEarthMetals'}, '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', {symbol: 'B', family: 'Metalloids'}, {symbol: 'C', family: 'NoMetals'}, {symbol: 'N', family: 'NoMetals'}, {symbol: 'O', family: 'NoMetals'}, {symbol: 'F', family: 'Halogens'}, {symbol: 'Ne', family: 'NobleGases'}],
@@ -21,74 +18,74 @@ const elements = [
 
 const Board = ({ setSelectedItem, selectedFamily }) => {
 	const elementsPeriod1 = elements[0].map(e => {
-		if (e == '-') {
-			return <Col className='Cell'></Col>;
+		if (e === '-') {
+			return <Col key={e.symbol} className='Cell'></Col>;
 		} else {
-			return <Col><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;	
+			return <Col key={e.symbol}><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;
 		}
 	});
 
 	const elementsPeriod2 = elements[1].map(e => {
-		if (e == '-') {
-			return <Col className='Cell'></Col>;
+		if (e === '-') {
+			return <Col key={e.symbol} className='Cell'></Col>;
 		} else {
-			return <Col><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;
+			return <Col key={e.symbol}><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;
 		}
 	});
 
 	const elementsPeriod3 = elements[2].map(e => {
-		if (e == '-') {
-			return <Col className='Cell'></Col>;
+		if (e === '-') {
+			return <Col key={e.symbol} className='Cell'></Col>;
 		} else {
-			return <Col><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;
+			return <Col key={e.symbol}><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;
 		}
 	});
 
 	const elementsPeriod4 = elements[3].map(e => {
-		if (e == '-') {
-			return <Col className='Cell'></Col>;
+		if (e === '-') {
+			return <Col key={e.symbol} className='Cell'></Col>;
 		} else {
-			return <Col><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;
+			return <Col key={e.symbol}><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;
 		}
 	});
 
 	const elementsPeriod5 = elements[4].map(e => {
-		if (e == '-') {
-			return <Col className='Cell'></Col>;
+		if (e === '-') {
+			return <Col key={e.symbol} className='Cell'></Col>;
 		} else {
-			return <Col><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;
+			return <Col key={e.symbol}><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;
 		}
 	});
 
 	const elementsPeriod6 = elements[5].map(e => {
-		if (e == '-') {
-			return <Col className='Cell'></Col>;
+		if (e === '-') {
+			return <Col key={e.symbol} className='Cell'></Col>;
 		} else {
-			return <Col><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;
+			return <Col key={e.symbol}><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;
 		}
 	});
 
 	const elementsPeriod7 = elements[6].map(e => {
-		if (e == '-') {
-			return <Col className='Cell'></Col>;
+		if (e === '-') {
+			return <Col key={e.symbol} className='Cell'></Col>;
 		} else {
-			return <Col><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;
+			return <Col key={e.symbol}><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;
 		}
 	});
 
 	const lan = elements[7].map(e => {
-		if (e == '-') {
-			return <Col className='Cell'></Col>;
+		if (e === '-') {
+			return <Col key={e.symbol} className='Cell'></Col>;
 		} else {
-			return <Col><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;
+			return <Col key={e.symbol}><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;
 		}
 	});
 
 	const act = elements[8].map(e => {
-		if (e == '-') {
-			return <Col className='Cell'></Col>;
+		if (e === '-') {
+			return <Col key={e.symbol} className='Cell'></Col>;
 		} else {
-			return <Col><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;
+			return <Col key={e.symbol}><Element e={e} setSelectedItem={setSelectedItem} selectedFamily={selectedFamily} /></Col>;
 		}
 	});
 

@@ -1,6 +1,5 @@
 import './App.css';
 import { useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
 
 import Board from './Board';
 import Header from './Header';

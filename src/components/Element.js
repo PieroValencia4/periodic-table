@@ -1,7 +1,5 @@
 import './Element.css';
 
-import { useState } from 'react';
-
 const Element = ({ e, setSelectedItem, selectedFamily }) => {
 	let className = 'Cell Element';
 

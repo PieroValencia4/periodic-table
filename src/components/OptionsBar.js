@@ -1,5 +1,4 @@
 import './OptionsBar.css';
-import { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
 const FamilyButton = ({ name, color, setSelectedFamily }) => (
