@@ -9,12 +9,12 @@ button {
 }
 
 #Element {
-	border-radius: 5px;
+	border-radius: 8px;
 	color: white;
 	background-color: grey;
 	padding: 2px;
 	margin: 2px;
-	width: 180px;
-	height: 180px;
-	font-size: 80px;
+	width: 160px;
+	height: 160px;
+	font-size: 75px;
 }

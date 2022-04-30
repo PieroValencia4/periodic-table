@@ -16,45 +16,49 @@
 }
 
 .DefaultColor {
-	background-color: #6BA397;
+	background-color: #6BA398;
 }
 
-.NobleGases {
-	background-color: #E7502E;
+.AlkalineEarthMetals {
+	background-color: #2ED9E7;
 }
 
-.Halogens {
-	background-color: #E78D2E;
-}
-
-.NoMetals {
-	background-color: #E7CB2E;
-}
-
-.Metalloids {
-	background-color: #C5E72E;
-}
-
-.PostTransitionalMetals {
-	background-color: #7FE72E;
+.AlkaliMetals {
+	background-color: #2E6CE7;
 }
 
 .TransitionMetals {
 	background-color: #2EE736;
 }
 
-.Actinides {
-	background-color: #2EE78D;
+.PostTransitionMetal {
+	background-color: #7FE72E;
+}
+
+.Metalloids {
+	background-color: #C5E72E;
+}
+
+.OtherNonmetals {
+	background-color: #E78D2E;
+}
+
+.Halogens {
+	background-color: #E7502E;
+}
+
+.NobleGases {
+	background-color: #662EE7;
 }
 
 .Lanthanides {
-	background-color: #2ED9E7;
+	background-color: #2EE78D;
 }
 
-.AlkalineEarthMetals {
-	background-color: #2E6CE7;
+.Actinides {
+	background-color: #196650;
 }
 
-.AlkaliMetals {
-	background-color: #662EE7;
-}
+/*.Superactinides {
+	background-color: #C5E72E;
+}*/
