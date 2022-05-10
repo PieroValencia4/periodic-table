@@ -1,0 +1,22 @@
+#Box {
+	border-radius: 10px;
+	color: white;
+	background-color: grey;
+	padding: 4px;
+	margin: 2px;
+	width: 180px;
+	height: 180px;
+}
+
+#EName {
+	font-size: 20px;
+}
+
+#ESymbol {
+	font-size: 75px;
+}
+
+#EAtomicNumber {
+	text-align: right;
+	font-size: 16px;
+}

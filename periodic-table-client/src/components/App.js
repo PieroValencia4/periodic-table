@@ -8,7 +8,7 @@ import OptionsBar from './OptionsBar';
 class App extends Component {
 	constructor(props) {
 		super(props);
-		this.state = {elements: {}, families: [], selectedFamily: '', selectedItem: 'H'};
+		this.state = {elements: {}, families: [], selectedFamily: '', selectedElement: {}};
 		this.setSelectedFamily = this.setSelectedFamily.bind(this);
 		this.setSelectedElement = this.setSelectedElement.bind(this);
 	}
@@ -20,7 +20,7 @@ class App extends Component {
 
         fetch('http://localhost:8080/elements')
             .then(resp => resp.json())
-            .then(data => this.setState({elements: data}));
+            .then(data => this.setState({elements: data, selectedElement: data['Period 1'][0]}));
     }
 
 	setSelectedFamily(family) {
@@ -28,16 +28,16 @@ class App extends Component {
 	}
 
 	setSelectedElement(element) {
-		this.setState({selectedItem: element});
+		this.setState({selectedElement: element});
 	}
 
 	render() {
-		const {elements, families, selectedFamily, selectedItem} = this.state;
+		const {elements, families, selectedFamily, selectedElement} = this.state;
 		let optionsBar = <h3>Loading...</h3>;
 		let board = <h3>Loading...</h3>;
 
 		if (families.length !== 0) {
-			optionsBar = <OptionsBar families={families} selectedItem={selectedItem} setSelectedFamily={this.setSelectedFamily} />;
+			optionsBar = <OptionsBar families={families} selectedElement={selectedElement} setSelectedFamily={this.setSelectedFamily} />;
 		}
 
 		if (Object.keys(elements).length !== 0) {

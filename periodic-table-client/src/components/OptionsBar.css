@@ -1,20 +1,15 @@
-button {
-	color: white;
-	width: 180px;
-	height: 55px;
-	border-radius: 10px;
-	padding: 2px;
-	margin: 2px;
-	font-weight: bold;
+.OptionsBar {
+	padding-top: 8px;
 }
 
-#Element {
-	border-radius: 8px;
+.FamilyButton {
 	color: white;
-	background-color: grey;
-	padding: 2px;
+	width: 200px;
+	height: 55px;
+	border-radius: 10px;
+	padding: 4px;
 	margin: 2px;
-	width: 160px;
-	height: 160px;
-	font-size: 75px;
+	font-weight: bold;
+	border: none;
+	text-decoration: none;
 }

@@ -19,7 +19,7 @@ const Element = ({ e, setSelectedElement, selectedFamily }) => {
 	const className = 'Cell Element ' + color;
 
  	return (
-		<div className={className} onClick={() => setSelectedElement(e.symbol)}>
+		<div className={className} onClick={() => setSelectedElement(e)}>
 			{e.symbol}
 		</div>
 	);

@@ -1,5 +1,5 @@
 .Header {
-    background-color: #CA94F2;
+    background-image: linear-gradient(#CA94F2, grey);
     border-radius: 25px;
     color: white;
     font-size: calc(10px + 2vmin);
