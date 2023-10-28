@@ -1,8 +1,7 @@
 import './Board.css';
 import './Element.css';
-import { Col, Container, Row } from 'react-bootstrap';
-
 import Element from './Element';
+import { Col, Container, Row } from 'react-bootstrap';
 
 const Board = ({ elements, setSelectedElement, selectedFamily }) => {
 	const period1 = elements['Period 1'];

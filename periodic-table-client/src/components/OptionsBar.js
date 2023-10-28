@@ -1,7 +1,6 @@
 import './OptionsBar.css';
-import { Col, Container, Row } from 'react-bootstrap';
-
 import SelectedElementBox from './SelectedElementBox';
+import { Col, Container, Row } from 'react-bootstrap';
 
 const FamilyButton = ({ family, color, setSelectedFamily }) => (
 	<button className='FamilyButton' style={{backgroundColor: color}} onClick={() => setSelectedFamily(family.name)}>
