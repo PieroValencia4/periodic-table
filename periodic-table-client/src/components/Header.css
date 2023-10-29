@@ -1,9 +1,24 @@
 .Header {
     background-image: linear-gradient(#CA94F2, grey);
-    border-radius: 25px;
+    border-radius: 20px;
     color: white;
     font-size: calc(10px + 2vmin);
     font-weight: bold;
-    padding: 5px;
+    padding: 10px;
     border: 5px solid gray;
+}
+
+#img1 {
+    width: 60px;
+    height: 60px;
+    animation: img1-rotate 10s linear infinite;
+}
+
+@keyframes img1-rotate {
+    0% { 
+        transform: rotate(0);
+    }
+    100% { 
+        transform: rotate(360deg);
+    }
 }

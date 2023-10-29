@@ -13,6 +13,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	transition: width 2s, height 4s;
+}
+
+.Element:hover {
+	width: 85px;
 }
 
 .DefaultColor {
