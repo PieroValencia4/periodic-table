@@ -2,14 +2,29 @@
 	padding-top: 8px;
 }
 
+#img2 {
+    width: 30px;
+    height: 30px;
+    animation: img1-rotate 10s linear infinite;
+    filter: blur(0.2px);
+}
+
 .FamilyButton {
-	color: white;
-	width: 200px;
-	height: 55px;
 	border-radius: 10px;
-	padding: 4px;
-	margin: 2px;
-	font-weight: bold;
 	border: none;
+	color: white;
+	font-weight: bold;
+	height: 55px;
+	margin: 2px;
+	padding: 4px;
 	text-decoration: none;
+	width: 250px;
+}
+
+.FamilyButtonMouseOver {
+	visibility: visible;
+}
+
+.FamilyButtonMouseOut {
+	visibility: hidden;
 }

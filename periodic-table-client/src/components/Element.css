@@ -1,19 +1,17 @@
 .Cell {
-	min-width: 40px;
-	min-height: 40px;
 	border-radius: 4px;
+	min-height: 40px;
+	min-width: 40px;
 }
 
 .Element {
+	align-items: center;
+	border: 1px solid #FFF;
+	display: flex;
 	font-size: 20px;
 	font-weight: bold;
-	border: 1px solid #FFF;
-	margin: 1px;
-
-	display: flex;
 	justify-content: center;
-	align-items: center;
-
+	margin: 1px;
 	transition: width 2s, height 4s;
 }
 
@@ -23,48 +21,127 @@
 
 .DefaultColor {
 	background-color: #6BA398;
+	background: linear-gradient(250deg, #6BA398, rgba(255,0,0,0) 80%),
+            	linear-gradient(125deg, #6BA398, rgba(0,255,0,0) 80%),
+            	linear-gradient(300deg, #6BA398, rgba(0,0,255,0) 80%);
 }
 
 .AlkalineEarthMetals {
+	animation: element 10s linear infinite;
 	background-color: #2ED9E7;
+	background: linear-gradient(250deg, #2ED9E7, rgba(255,0,0,0) 80%),
+            	linear-gradient(125deg, #2ED9E7, rgba(0,255,0,0) 80%),
+            	linear-gradient(300deg, #2ED9E7, rgba(0,0,255,0) 80%);
 }
 
 .AlkaliMetals {
+	animation: element 10s linear infinite;
 	background-color: #2E6CE7;
+	background: linear-gradient(250deg, #2E6CE7, rgba(255,0,0,0) 80%),
+            	linear-gradient(125deg, #2E6CE7, rgba(0,255,0,0) 80%),
+            	linear-gradient(300deg, #2E6CE7, rgba(0,0,255,0) 80%);
 }
 
 .TransitionMetals {
+	animation: element 10s linear infinite;
 	background-color: #2EE736;
+	background: linear-gradient(250deg, #2EE736, rgba(255,0,0,0) 80%),
+            	linear-gradient(125deg, #2EE736, rgba(0,255,0,0) 80%),
+            	linear-gradient(300deg, #2EE736, rgba(0,0,255,0) 80%);
 }
 
 .PostTransitionMetal {
+	animation: element 10s linear infinite;
 	background-color: #7FE72E;
+	background: linear-gradient(250deg, #7FE72E, rgba(255,0,0,0) 80%),
+            	linear-gradient(125deg, #7FE72E, rgba(0,255,0,0) 80%),
+            	linear-gradient(300deg, #7FE72E, rgba(0,0,255,0) 80%);
 }
 
 .Metalloids {
+	animation: element 10s linear infinite;
 	background-color: #C5E72E;
+	background: linear-gradient(250deg, #C5E72E, rgba(255,0,0,0) 80%),
+            	linear-gradient(125deg, #C5E72E, rgba(0,255,0,0) 80%),
+            	linear-gradient(300deg, #C5E72E, rgba(0,0,255,0) 80%);
 }
 
 .OtherNonmetals {
+	animation: element 10s linear infinite;
 	background-color: #E78D2E;
+	background: linear-gradient(250deg, #E78D2E, rgba(255,0,0,0) 80%),
+            	linear-gradient(125deg, #E78D2E, rgba(0,255,0,0) 80%),
+            	linear-gradient(300deg, #E78D2E, rgba(0,0,255,0) 80%);
 }
 
 .Halogens {
+	animation: element 10s linear infinite;
 	background-color: #E7502E;
+	background: linear-gradient(250deg, #E7502E, rgba(255,0,0,0) 80%),
+            	linear-gradient(125deg, #E7502E, rgba(0,255,0,0) 80%),
+            	linear-gradient(300deg, #E7502E, rgba(0,0,255,0) 80%);
 }
 
 .NobleGases {
+    animation: element 10s linear infinite;
 	background-color: #662EE7;
+	background: linear-gradient(250deg, #662EE7, rgba(255,0,0,0) 80%),
+            	linear-gradient(125deg, #662EE7, rgba(0,255,0,0) 80%),
+            	linear-gradient(300deg, #662EE7, rgba(0,0,255,0) 80%);
 }
 
 .Lanthanides {
+    animation: element 10s linear infinite;
 	background-color: #2EE78D;
+	background: linear-gradient(250deg, #2EE78D, rgba(255,0,0,0) 80%),
+            	linear-gradient(125deg, #2EE78D, rgba(0,255,0,0) 80%),
+            	linear-gradient(300deg, #2EE78D, rgba(0,0,255,0) 80%);
 }
 
 .Actinides {
+    animation: element 10s linear infinite;
 	background-color: #196650;
+	background: linear-gradient(250deg, #196650, rgba(255,0,0,0) 80%),
+            	linear-gradient(125deg, #196650, rgba(0,255,0,0) 80%),
+            	linear-gradient(300deg, #196650, rgba(0,0,255,0) 80%);
 }
 
 /*.Superactinides {
 	background-color: #C5E72E;
 }*/
+
+@keyframes element {
+	0% {
+		filter: brightness(90%) contrast(100%);
+	}
+	10% {
+		filter: brightness(95%) contrast(102%);
+	}
+	20% {
+		filter: brightness(100%) contrast(104%);
+	}
+	30% {
+		filter: brightness(105%) contrast(106%);
+	}
+	40% {
+		filter: brightness(110%) contrast(108%) hue-rotate(5deg);
+	}
+	50% {
+		filter: brightness(115%) contrast(110%) hue-rotate(20deg);
+	}
+	60% {
+		filter: brightness(110%) contrast(108%) hue-rotate(5deg);
+	}
+	70% {
+		filter: brightness(105%) contrast(106%);
+	}
+	80% {
+		filter: brightness(100%) contrast(104%);
+	}
+	90% {
+		filter: brightness(95%) contrast(102%);
+	}
+	100% {
+		filter: brightness(90%) contrast(100%);
+	}
+}

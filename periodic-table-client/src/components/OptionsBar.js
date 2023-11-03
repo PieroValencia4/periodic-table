@@ -1,12 +1,30 @@
 import './OptionsBar.css';
 import SelectedElementBox from './SelectedElementBox';
 import { Col, Container, Row } from 'react-bootstrap';
+import { useState } from 'react';
 
-const FamilyButton = ({ family, color, setSelectedFamily }) => (
-	<button className='FamilyButton' style={{backgroundColor: color}} onClick={() => setSelectedFamily(family.name)}>
-		{`${family.name} (${family.total})`}
-	</button>
-);
+const FamilyButton = ({ family, color, setSelectedFamily }) => {
+	const [familyButtonStyle, setFamilyButtonStyle] = useState('FamilyButtonMouseOut');
+
+	return (
+		<Container
+			className='FamilyButton'
+			style={{backgroundColor: color}}
+			onClick={() => setSelectedFamily(family.name)}
+			onMouseOver={() => setFamilyButtonStyle('FamilyButtonMouseOver')}
+			onMouseOut={() => setFamilyButtonStyle('FamilyButtonMouseOut')}
+		>
+			<Row>
+				<Col sm={2}>
+					<img id='img2' className={familyButtonStyle} src='chemistry.png' />
+				</Col>
+				<Col sm={10}>
+					{`${family.name} (${family.total})`}
+				</Col>				
+			</Row>
+		</Container>
+	);
+};
 
 const OptionsBar = ({ families, selectedElement, setSelectedFamily }) => {
 	return (
