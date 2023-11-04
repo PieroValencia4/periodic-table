@@ -6,9 +6,9 @@
 
 .Element {
 	align-items: center;
-	border: 1px solid #FFF;
+	border: 1px solid rgba(245, 245, 255, 0.8);
 	display: flex;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: bold;
 	justify-content: center;
 	margin: 1px;
@@ -20,15 +20,13 @@
 }
 
 .DefaultColor {
-	background-color: #6BA398;
 	background: linear-gradient(250deg, #6BA398, rgba(255,0,0,0) 80%),
-            	linear-gradient(125deg, #6BA398, rgba(0,255,0,0) 80%),
+            	linear-gradient(100deg, #6BA398, rgba(0,255,0,0) 80%),
             	linear-gradient(300deg, #6BA398, rgba(0,0,255,0) 80%);
 }
 
 .AlkalineEarthMetals {
 	animation: element 10s linear infinite;
-	background-color: #2ED9E7;
 	background: linear-gradient(250deg, #2ED9E7, rgba(255,0,0,0) 80%),
             	linear-gradient(125deg, #2ED9E7, rgba(0,255,0,0) 80%),
             	linear-gradient(300deg, #2ED9E7, rgba(0,0,255,0) 80%);
@@ -36,7 +34,6 @@
 
 .AlkaliMetals {
 	animation: element 10s linear infinite;
-	background-color: #2E6CE7;
 	background: linear-gradient(250deg, #2E6CE7, rgba(255,0,0,0) 80%),
             	linear-gradient(125deg, #2E6CE7, rgba(0,255,0,0) 80%),
             	linear-gradient(300deg, #2E6CE7, rgba(0,0,255,0) 80%);
@@ -44,7 +41,6 @@
 
 .TransitionMetals {
 	animation: element 10s linear infinite;
-	background-color: #2EE736;
 	background: linear-gradient(250deg, #2EE736, rgba(255,0,0,0) 80%),
             	linear-gradient(125deg, #2EE736, rgba(0,255,0,0) 80%),
             	linear-gradient(300deg, #2EE736, rgba(0,0,255,0) 80%);
@@ -52,7 +48,6 @@
 
 .PostTransitionMetal {
 	animation: element 10s linear infinite;
-	background-color: #7FE72E;
 	background: linear-gradient(250deg, #7FE72E, rgba(255,0,0,0) 80%),
             	linear-gradient(125deg, #7FE72E, rgba(0,255,0,0) 80%),
             	linear-gradient(300deg, #7FE72E, rgba(0,0,255,0) 80%);
@@ -60,7 +55,6 @@
 
 .Metalloids {
 	animation: element 10s linear infinite;
-	background-color: #C5E72E;
 	background: linear-gradient(250deg, #C5E72E, rgba(255,0,0,0) 80%),
             	linear-gradient(125deg, #C5E72E, rgba(0,255,0,0) 80%),
             	linear-gradient(300deg, #C5E72E, rgba(0,0,255,0) 80%);
@@ -68,7 +62,6 @@
 
 .OtherNonmetals {
 	animation: element 10s linear infinite;
-	background-color: #E78D2E;
 	background: linear-gradient(250deg, #E78D2E, rgba(255,0,0,0) 80%),
             	linear-gradient(125deg, #E78D2E, rgba(0,255,0,0) 80%),
             	linear-gradient(300deg, #E78D2E, rgba(0,0,255,0) 80%);
@@ -76,7 +69,6 @@
 
 .Halogens {
 	animation: element 10s linear infinite;
-	background-color: #E7502E;
 	background: linear-gradient(250deg, #E7502E, rgba(255,0,0,0) 80%),
             	linear-gradient(125deg, #E7502E, rgba(0,255,0,0) 80%),
             	linear-gradient(300deg, #E7502E, rgba(0,0,255,0) 80%);
@@ -84,7 +76,6 @@
 
 .NobleGases {
     animation: element 10s linear infinite;
-	background-color: #662EE7;
 	background: linear-gradient(250deg, #662EE7, rgba(255,0,0,0) 80%),
             	linear-gradient(125deg, #662EE7, rgba(0,255,0,0) 80%),
             	linear-gradient(300deg, #662EE7, rgba(0,0,255,0) 80%);
@@ -92,7 +83,6 @@
 
 .Lanthanides {
     animation: element 10s linear infinite;
-	background-color: #2EE78D;
 	background: linear-gradient(250deg, #2EE78D, rgba(255,0,0,0) 80%),
             	linear-gradient(125deg, #2EE78D, rgba(0,255,0,0) 80%),
             	linear-gradient(300deg, #2EE78D, rgba(0,0,255,0) 80%);
@@ -100,7 +90,6 @@
 
 .Actinides {
     animation: element 10s linear infinite;
-	background-color: #196650;
 	background: linear-gradient(250deg, #196650, rgba(255,0,0,0) 80%),
             	linear-gradient(125deg, #196650, rgba(0,255,0,0) 80%),
             	linear-gradient(300deg, #196650, rgba(0,0,255,0) 80%);

@@ -3,16 +3,16 @@
 }
 
 #img2 {
-    width: 30px;
-    height: 30px;
     animation: img1-rotate 10s linear infinite;
     filter: blur(0.2px);
+    height: 30px;
+    width: 30px;
 }
 
 .FamilyButton {
 	border-radius: 10px;
 	border: none;
-	color: white;
+	color: rgba(240, 240, 250, 1.0);
 	font-weight: bold;
 	height: 55px;
 	margin: 2px;
